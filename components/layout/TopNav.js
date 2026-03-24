@@ -130,8 +130,11 @@ export default function TopNav({ data }) {
         </div>
       </motion.header>
 
-      <nav className="fixed inset-x-3 bottom-3 z-[55] sm:hidden" aria-label="Mobile section navigation">
-        <div className="mx-auto max-w-md rounded-2xl border border-border/70 bg-surface/95 p-1 shadow-soft backdrop-blur-xl">
+      <nav
+        className="fixed inset-x-0 bottom-0 z-[55] border-t border-border/70 bg-surface/95 px-2 pb-[calc(env(safe-area-inset-bottom)+0.4rem)] pt-1 shadow-soft backdrop-blur-xl sm:hidden"
+        aria-label="Mobile section navigation"
+      >
+        <div className="mx-auto max-w-3xl">
           <ul className="grid grid-cols-6 gap-1">
             {SECTION_ITEMS.map((item) => {
               const Icon = item.icon;
@@ -143,7 +146,7 @@ export default function TopNav({ data }) {
                     href={item.href}
                     onClick={() => setActiveHref(item.href)}
                     aria-current={isActive ? "page" : undefined}
-                    className={`flex flex-col items-center justify-center rounded-xl px-1 py-1.5 text-[10px] font-medium transition-colors ${
+                    className={`flex flex-col items-center justify-center rounded-lg px-1 py-1.5 text-[10px] font-medium transition-colors ${
                       isActive
                         ? "bg-panel text-foreground"
                         : "text-muted hover:bg-panel/70 hover:text-foreground"
