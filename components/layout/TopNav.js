@@ -25,7 +25,10 @@ export default function TopNav({ data }) {
     >
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-2 rounded-full border border-border/70 bg-surface/90 px-3 py-2 shadow-soft backdrop-blur-xl">
         <a
-          href="#home"
+          href={data.contact.linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Open LinkedIn profile"
           className="inline-flex items-center gap-2 rounded-full border border-border bg-panel/75 px-2 py-1 pr-3 text-foreground transition-colors hover:border-primary/35"
         >
           <span className="relative h-8 w-8 overflow-hidden rounded-full ring-2 ring-primary/25">

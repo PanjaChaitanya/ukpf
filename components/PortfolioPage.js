@@ -35,7 +35,7 @@ export default function PortfolioPage({ data }) {
         <HighlightsSection highlights={data.highlights} />
         <EducationSection education={data.education} />
         <ContactSection contact={data.contact} />
-        <FooterSection name={data.name} />
+        <FooterSection name={data.name} contact={data.contact} />
       </motion.main>
     </div>
   );

@@ -1,8 +1,8 @@
 ﻿export const portfolioData = {
   name: "Rajini Jonna",
-  title: "Senior SAS Programming Analyst",
+  title: "Sr. SAS Programming Analyst at Johnson and Johnson",
   tagline:
-    "Transforming complex clinical trial data into submission-ready evidence and decision-ready insights.",
+    "10+ years of SAS programming experience across Phase I-IV clinical trials, from CDISC mapping to submission-ready reporting.",
   location: "Pennsylvania, United States",
   contact: {
     email: "rajinijonna777@gmail.com",
@@ -12,9 +12,9 @@
   },
   profileImage: "/rajinijonna-profile.jpg",
   summary:
-    "Senior SAS programming specialist with 10+ years of experience across Phase I-IV studies, building validated SDTM and ADaM assets, and delivering reliable Tables, Listings, and Figures for regulatory and clinical decision-making.",
+    "Senior SAS programming specialist with 10+ years of experience in programming, analysis, and reporting for clinical trial studies using SAS in Windows environments.",
   about:
-    "I partner with biostatistics, data management, and clinical teams to convert raw trial data into trusted analysis outputs. My focus is precision and pace: robust SDTM and ADaM mapping, reproducible macros, clean validation workflows, and clear reporting aligned to SAP and submission standards. Across immunology, oncology, cardiovascular, vaccines, and infectious disease studies, I have consistently delivered analysis-ready datasets and high-quality TLF packages with audit-ready documentation.",
+    "I have worked across cardiovascular, oncology, and immunology clinical trials with strong exposure to the drug development lifecycle in Phase I, II, III, and IV studies. My core strength is building and validating SDTM and ADaM datasets, then generating high-quality tables, listings, figures, and graphs aligned with SAP requirements. I bring strong CDISC SDTM mapping knowledge, hands-on experience with OpenCDISC validator issue resolution, and deep reporting expertise using SAS/ODS in EXCEL, RTF, HTML, and PDF formats. I routinely use PROC REPORT, PROC SUMMARY, PROC MEANS, PROC FREQ, DATA step, DATA _NULL_, and macro programming to deliver ad hoc and scheduled outputs. I am proficient in debugging and validation, familiar with FDA regulations, ICH guidelines, and GCP requirements, and effective both independently and in cross-functional teams.",
   metrics: [
     {
       label: "Years in Clinical Programming",
@@ -37,8 +37,8 @@
         "Base SAS",
         "SAS Macro Development",
         "Macro Debugging",
-        "PROC Reporting",
-        "Data Conversions",
+        "DATA Step and DATA _NULL_",
+        "PROC REPORT / SUMMARY / MEANS / FREQ",
       ],
     },
     {
@@ -56,11 +56,11 @@
       category: "Statistical Reporting",
       proficiency: 93,
       items: [
-        "TLF Generation",
+        "TLF and TLG Generation",
         "SAP-Based Reporting",
         "Safety and Efficacy Analysis",
         "Ad Hoc Statistical Reports",
-        "ISS and CSR Outputs",
+        "SAS/ODS Output (EXCEL, RTF, HTML, PDF)",
       ],
     },
     {
@@ -69,9 +69,9 @@
       items: [
         "IND and E-Submission Files",
         "FDA / ICH / GCP Awareness",
+        "OpenCDISC Validator Resolution",
         "Cross-Functional Reviews",
-        "Mentoring and Peer Review",
-        "R (Foundational)",
+        "Independent and Team Delivery",
       ],
     },
   ],
@@ -80,22 +80,22 @@
       id: "jnj",
       company: "Johnson and Johnson",
       location: "Pennsylvania, US",
-      period: "Jun 2018 - Oct 2025",
+      period: "Jun 2018 - Jun 2025",
       title: "Sr. SAS Programming Analyst",
       focus: "Immunology, Infectious Diseases, and Vaccines",
       highlights: [
-        "Led development and quality control of statistical SAS programs for ongoing clinical trials.",
-        "Built and validated multiple ADaM datasets and metadata packages for analysis workflows.",
-        "Collaborated directly with statisticians to produce submission-grade TLFs.",
-        "Developed study-specific macro libraries and mentored junior programmers.",
+        "Led development, quality control, and documentation of statistical SAS programs for clinical trial studies.",
+        "Supported planning and execution of SAS programming activities and project requirements.",
+        "Built and validated ADaM datasets and submission-ready TLF outputs.",
+        "Developed study-specific macros and maintained complete documentation standards.",
       ],
     },
     {
       id: "veristat",
       company: "Veristat",
-      location: "Massachusetts, US",
+      location: "Boston, Massachusetts, US (Remote)",
       period: "Oct 2017 - Mar 2018",
-      title: "Senior SAS Programmer",
+      title: "Senior Statistical Programmer",
       focus: "Oncology",
       highlights: [
         "Delivered analysis outputs based on SAP using robust SAS procedures and reusable utilities.",
@@ -107,9 +107,9 @@
     {
       id: "accenture",
       company: "Accenture",
-      location: "Pennsylvania, US",
+      location: "Philadelphia, Pennsylvania, US (Remote)",
       period: "Aug 2016 - Sep 2017",
-      title: "Senior SAS Programmer",
+      title: "SAS Programmer II",
       focus: "Cardiovascular and Oncology",
       highlights: [
         "Created validated SDTM and ADaM datasets aligned to CDISC implementation guidance.",
@@ -121,8 +121,8 @@
     {
       id: "icmr",
       company: "National Institute of Nutrition - ICMR",
-      location: "India",
-      period: "Feb 2013 - Oct 2014",
+      location: "Hyderabad Area, India (On-site)",
+      period: "Mar 2012 - Oct 2014",
       title: "Junior Research Fellow",
       focus: "Nutrient and phytonutrient analysis",
       highlights: [
@@ -132,43 +132,58 @@
     {
       id: "ccmb",
       company: "Centre for Cellular and Molecular Biology",
-      location: "India",
-      period: "Feb 2011 - Jan 2013",
+      location: "Hyderabad, Telangana, India (On-site)",
+      period: "Feb 2011 - Jan 2012",
       title: "Junior Research Fellow",
       focus: "Non-invasive fertility assessment",
       highlights: [
         "Supported ELISA-based non-invasive methods for fertility and pregnancy monitoring in wildlife species.",
       ],
     },
+    {
+      id: "iict",
+      company: "Indian Institute of Chemical Technology",
+      location: "Hyderabad Area, India",
+      period: "Jul 2010 - Jan 2011",
+      title: "Project Trainee",
+      focus:
+        "Enzyme production research: Glycerol Dehydratase (GDHt) and 1,3-propanediol oxidoreductase (PDOR)",
+      highlights: [
+        "Worked on optimization of cell lysis methods and fermentation parameters to improve enzyme production.",
+        "Performed purification workflows and protein quantification using the Lowry method.",
+        "Estimated 1,3-propanediol concentration using HPLC-based analysis.",
+        "Supported microbial isolation, serial dilution, media preparation, and inoculation workflows.",
+      ],
+    },
   ],
   highlights: [
     {
-      title: "Submission-Ready ADaM Pipeline",
+      title: "Submission-Ready ADaM and SDTM Delivery",
       description:
-        "Built validated ADaM datasets and metadata that streamlined safety and efficacy analysis across studies.",
-      impact: "Faster, cleaner downstream analysis and reporting",
-      tags: ["ADaM", "Validation", "Metadata"],
+        "Built and validated SDTM and ADaM assets with strong mapping quality and documentation for regulated studies.",
+      impact: "Reliable analysis-ready data for downstream statistical reporting",
+      tags: ["ADaM", "SDTM", "Validation"],
     },
     {
-      title: "TLF Delivery for Clinical Decisions",
+      title: "SAS/ODS Reporting at Scale",
       description:
-        "Partnered with statisticians to deliver precise tables, listings, and figures aligned to SAP requirements.",
-      impact: "Consistent, decision-ready reporting for trial teams",
-      tags: ["TLF", "SAP", "SAS Reporting"],
+        "Generated clinical outputs in EXCEL, RTF, HTML, and PDF through SAS/ODS for recurring and ad hoc reporting needs.",
+      impact: "Consistent, presentation-ready outputs for study teams and stakeholders",
+      tags: ["SAS/ODS", "Reporting", "Output Automation"],
     },
     {
-      title: "Macro-Driven Productivity",
+      title: "Procedure and Macro Expertise",
       description:
-        "Developed reusable study macros and applied debugging best practices to reduce repetitive programming effort.",
-      impact: "Higher output quality with improved programming velocity",
-      tags: ["SAS Macros", "Automation", "QC"],
+        "Applied PROC REPORT, SUMMARY, MEANS, FREQ, DATA step, and macro programming to meet SAP-driven analysis timelines.",
+      impact: "Faster turnaround with reproducible and high-quality deliverables",
+      tags: ["PROC REPORT", "Macros", "SAP"],
     },
     {
-      title: "Compliance and Data Quality",
+      title: "Compliance and Quality Control",
       description:
-        "Worked through OpenCDISC checks, issue logs, and cross-team reviews to maintain high data integrity standards.",
-      impact: "Reduced submission risk and cleaner regulatory packages",
-      tags: ["CDISC", "OpenCDISC", "Regulatory"],
+        "Worked with OpenCDISC validator findings and robust QC practices aligned with FDA, ICH, and GCP expectations.",
+      impact: "Lower submission risk and stronger data confidence",
+      tags: ["OpenCDISC", "QC", "Regulatory"],
     },
   ],
   education: [
