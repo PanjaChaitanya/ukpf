@@ -26,7 +26,7 @@ export default function PortfolioPage({ data }) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
-        className="relative z-10 mx-auto w-full max-w-6xl px-4"
+        className="relative z-10 mx-auto w-full max-w-6xl px-4 pb-24 sm:pb-0"
       >
         <HeroSection data={data} />
         <AboutSection summary={data.summary} about={data.about} />
