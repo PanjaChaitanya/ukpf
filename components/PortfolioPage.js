@@ -20,7 +20,7 @@ export default function PortfolioPage({ data }) {
       <ScrollProgress />
       <CursorAura />
       <BackgroundDecor />
-      <TopNav />
+      <TopNav data={data} />
 
       <motion.main
         initial={{ opacity: 0 }}

@@ -2,9 +2,10 @@
 
 import { useEffect, useRef } from "react";
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowDownRight, Sparkles } from "lucide-react";
+import { ArrowDownRight, MessageCircle, Sparkles } from "lucide-react";
 import gsap from "gsap";
 import Reveal from "@/components/ui/Reveal";
+import LinkedInIcon from "@/components/ui/LinkedInIcon";
 
 export default function HeroSection({ data }) {
   const heroRef = useRef(null);
@@ -130,10 +131,22 @@ export default function HeroSection({ data }) {
               <ArrowDownRight className="h-4 w-4" />
             </a>
             <a
-              href="#experience"
-              className="inline-flex items-center rounded-full border border-border bg-surface px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-panel"
+              href={data.contact.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-5 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-panel"
             >
-              Explore Experience
+              <LinkedInIcon className="h-4 w-4 text-primary" />
+              LinkedIn
+            </a>
+            <a
+              href={data.contact.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-5 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-panel"
+            >
+              <MessageCircle className="h-4 w-4 text-accent" />
+              WhatsApp
             </a>
           </motion.div>
         </div>

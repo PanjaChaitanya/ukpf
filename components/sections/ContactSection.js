@@ -2,9 +2,10 @@
 
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Mail, Phone, SendHorizontal } from "lucide-react";
+import { Mail, MessageCircle, Phone, SendHorizontal } from "lucide-react";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Reveal from "@/components/ui/Reveal";
+import LinkedInIcon from "@/components/ui/LinkedInIcon";
 
 const initialForm = {
   name: "",
@@ -64,6 +65,24 @@ export default function ContactSection({ contact }) {
               >
                 <Phone className="h-4 w-4 text-primary" />
                 {contact.phone}
+              </a>
+              <a
+                href={contact.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 rounded-2xl border border-border bg-panel px-4 py-3 text-sm text-foreground transition-colors hover:border-primary/30"
+              >
+                <LinkedInIcon className="h-4 w-4 text-primary" />
+                LinkedIn Profile
+              </a>
+              <a
+                href={contact.whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 rounded-2xl border border-border bg-panel px-4 py-3 text-sm text-foreground transition-colors hover:border-accent/40"
+              >
+                <MessageCircle className="h-4 w-4 text-accent" />
+                WhatsApp Chat
               </a>
             </div>
           </div>

@@ -1,6 +1,9 @@
 ﻿"use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
+import { MessageCircle } from "lucide-react";
+import LinkedInIcon from "@/components/ui/LinkedInIcon";
 import ThemeToggle from "@/components/ui/ThemeToggle";
 
 const NAV_ITEMS = [
@@ -12,7 +15,7 @@ const NAV_ITEMS = [
   { label: "Contact", href: "#contact" },
 ];
 
-export default function TopNav() {
+export default function TopNav({ data }) {
   return (
     <motion.header
       initial={{ opacity: 0, y: -18 }}
@@ -23,9 +26,20 @@ export default function TopNav() {
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-2 rounded-full border border-border/70 bg-surface/90 px-3 py-2 shadow-soft backdrop-blur-xl">
         <a
           href="#home"
-          className="font-display text-sm font-semibold tracking-wide text-foreground"
+          className="inline-flex items-center gap-2 rounded-full border border-border bg-panel/75 px-2 py-1 pr-3 text-foreground transition-colors hover:border-primary/35"
         >
-          RJ
+          <span className="relative h-8 w-8 overflow-hidden rounded-full ring-2 ring-primary/25">
+            <Image
+              src={data.profileImage}
+              alt="Rajini Jonna profile"
+              fill
+              sizes="32px"
+              className="object-cover"
+            />
+          </span>
+          <span className="hidden font-display text-xs font-semibold tracking-wide sm:block">
+            Rajini
+          </span>
         </a>
 
         <nav className="no-scrollbar flex items-center gap-1 overflow-x-auto px-2 text-sm">
@@ -40,7 +54,25 @@ export default function TopNav() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1 sm:gap-2">
+          <a
+            href={data.contact.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border bg-panel/70 text-muted transition-colors hover:border-primary/40 hover:text-foreground"
+          >
+            <LinkedInIcon className="h-4 w-4" />
+          </a>
+          <a
+            href={data.contact.whatsapp}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border bg-panel/70 text-muted transition-colors hover:border-accent/40 hover:text-foreground"
+          >
+            <MessageCircle className="h-4 w-4" />
+          </a>
           <ThemeToggle />
         </div>
       </div>

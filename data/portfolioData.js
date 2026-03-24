@@ -7,7 +7,10 @@
   contact: {
     email: "rajinijonna777@gmail.com",
     phone: "+1 980-875-0644",
+    linkedin: "https://www.linkedin.com/in/rajinijonna/",
+    whatsapp: "https://wa.me/19808750644",
   },
+  profileImage: "/rajinijonna-profile.jpg",
   summary:
     "Senior SAS programming specialist with 10+ years of experience across Phase I-IV studies, building validated SDTM and ADaM assets, and delivering reliable Tables, Listings, and Figures for regulatory and clinical decision-making.",
   about:
